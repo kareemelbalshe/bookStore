@@ -1,0 +1,126 @@
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content{
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+.modal-icon{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+    color: crimson;
+    font-size: 50px;
+}
+.model-content-img img{
+    height: 100%;
+    width: 90%;
+}
+.model-content-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 60%;
+}
+.model-content-info-title{
+    font-size: 30px;
+}
+.model-content-info-stock{
+    font-size: 21px;
+    margin: 15px 0;
+}
+.model-content-info-author{
+    font-size: 21px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: teal;
+}
+.model-content-info-author b,
+.model-content-info-price b{
+    color: #000;
+}
+.model-content-info-price{
+    color: crimson;
+    font-size: 25px;
+    font-weight: 500;
+}
+.model-add-to-cart{
+    margin: 30px 0;
+}
+.model-add-to-cart-input{
+    margin-right: 15px;
+    font-size: 25px;
+}
+.model-add-to-cart-btn{
+    border: 1px solid green;
+    border-radius: 7px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: green;
+    font-size: 21px;
+    font-weight: 600;
+    background-color: transparent;
+}
+.model-add-to-cart-btn i{
+    margin-right: 5px;
+}
+.model-add-to-cart-btn:hover{
+    background-color: aquamarine;
+}
+.model-content-info-link{
+    font-size: 24px;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    width: max-content;
+    text-decoration: none;
+}
+@media(max-width: 960px){
+    .model-content-img{
+        width: 30%;
+    }
+    .model-content-info{
+        width: 70%;
+    }
+    .model-content-info-title{
+        font-size: 21px;
+    }
+}
+@media(max-width: 720px){
+    .modal-content{
+        height: auto;
+        width: 90%;
+    }
+    .model-content-img{
+        display: none;
+    }
+    .model-content-info{
+        padding: 15px;
+        width: 100%;
+    }
+    .model-add-to-cart-btn{
+        margin-top: 10px;
+    }
+}
